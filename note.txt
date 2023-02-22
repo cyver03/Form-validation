@@ -1,0 +1,5 @@
+1. issue encountered in defaultSetu()
+    -senario: input data in input element
+            then click submmit then remove
+            the data then click submmit
+            then an error will occured.

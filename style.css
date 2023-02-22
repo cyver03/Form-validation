@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root{
+    --primary-color:  rgb(247, 247, 247);
+    --secondary-color: rgb(226, 224, 224);
+    --tertiay-color: black;
+}
+
+*,::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Roboto", sans-serif;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+}
+form{
+   background-color: var(--secondary-color);
+   padding: 20px 30px;
+   border-radius: 5px;
+   font-weight: bold;
+   letter-spacing: 1px;
+   box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+}
+form .header{
+    position: relative;
+}
+form h2{
+    margin-bottom: 10px;
+    text-align: center;
+    height: 40px;
+    color: var(--primary-color);
+}
+form h2::before{
+    background-color: var(--tertiay-color);
+    height: 2px;
+    width: 100%;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    display: flex;
+}
+
+form .form-control label, input{
+    display: block;
+    
+}
+form .form-control input{
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid var(--tertiay-color);
+    background-color: var(--primary-color);
+    margin-bottom: 13px;
+}
+form .form-control.error input{
+    border: 1px solid red;
+}
+small{
+    color: red;
+    font-size: 10px;
+    display: block;
+    height: 13px;
+    margin-top: -8px;
+}
+form .form-control input:focus{
+    outline: 0;
+}
+button{
+    width:100%;
+    height: 40px;
+    font-weight: bold;
+    background-color: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid var(--tertiay-color);
+    margin-top: 5px;
+}
+button:hover{
+    background-color: var(--primary-color);
+    border: 0;
+}
+button:active{
+    border: 1px solid var(--tertiay-color);
+}
